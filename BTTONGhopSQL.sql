@@ -43,7 +43,9 @@ from demo2006.order o
 join orderdetail od on o.id=od.orderid
 join product p on od.productid=p.id
 where p.name like 'Tủ lạnh'  and od.quantity between 10 and 20;
+
 select maygiat.id,maygiat.time,maygiat.name  from  maygiat join tulanh on maygiat.id = tulanh.id; 
+
 /*15. In ra danh sách các sản phẩm (MASP,TENSP) không bán được.*/
 select product.Id,product.name 
 from product 
